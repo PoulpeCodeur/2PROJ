@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Brown_stone_ground1_0: -9073795379315455278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

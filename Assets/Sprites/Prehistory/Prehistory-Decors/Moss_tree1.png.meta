@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Moss_tree1_0: 1402676857040809581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

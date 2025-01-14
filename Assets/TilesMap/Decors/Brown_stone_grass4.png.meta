@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Brown_stone_grass4_0: -7845157580921744601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

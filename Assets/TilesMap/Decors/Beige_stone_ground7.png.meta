@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beige_stone_ground7_0: -7105896601885512184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

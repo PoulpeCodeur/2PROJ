@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Light_stone_ground1_0: 6586914571461411940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

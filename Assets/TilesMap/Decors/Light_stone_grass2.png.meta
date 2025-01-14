@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Light_stone_grass2_0: -4174774632607278283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
