@@ -1,0 +1,8 @@
+Library/
+.vscode/
+Logs/
+Temp/
+*.log
+*.bak
+.swp.apk
+*.unitypackage
