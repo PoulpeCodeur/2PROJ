@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ruin_orange3_0: 7772827800220942133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

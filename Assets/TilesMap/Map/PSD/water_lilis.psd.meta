@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      water_lilis_0: -1362755945347231548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

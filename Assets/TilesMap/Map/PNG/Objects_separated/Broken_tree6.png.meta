@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Broken_tree6_0: 5176215739470939883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

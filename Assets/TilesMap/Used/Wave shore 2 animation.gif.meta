@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wave shore 2 animation_0: -4319341205372309086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
