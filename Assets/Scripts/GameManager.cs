@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public Stockages stockages;
 
     private void Awake()
     {
@@ -18,6 +19,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void AddResource(string resourceName, int amount)
+    {
+        int currentAmount = stockages.GetResource(resourceName);
+        stockages.SetResource(resourceName, currentAmount + amount);
+        Debug.Log("GameManager: Total " + resourceName + ": " + (currentAmount + amount));
     }
 
     public void SwitchScene(string sceneName)
