@@ -50,21 +50,21 @@ public class CameraMovement : MonoBehaviour
 
     void ConstrainCameraPosition()
     {
-        // Récupère les coordonnées du coin inférieur gauche et du coin supérieur droit de la Tilemap
-        Vector3 tilemapMin = tilemap.localBounds.min;
-        Vector3 tilemapMax = tilemap.localBounds.max;
+        Bounds tilemapBounds = tilemap.localBounds;
 
-        // Calcule les limites de la caméra en fonction de sa taille
-        float camHalfWidth = cam.orthographicSize * cam.aspect; // Largeur visible de la caméra (en fonction du ratio d'aspect)
-        float camHalfHeight = cam.orthographicSize; // Hauteur visible de la caméra
+        if (tilemapBounds.size == Vector3.zero) 
+        {
+            tilemap.CompressBounds(); // Mise à jour des limites si elles sont mal définies
+            tilemapBounds = tilemap.localBounds;
+        }
 
-        // Limite la position de la caméra sur l'axe X (gauche et droite)
-        float clampedX = Mathf.Clamp(transform.position.x, tilemapMin.x + camHalfWidth, tilemapMax.x - camHalfWidth);
+        float camHalfWidth = cam.orthographicSize * cam.aspect;
+        float camHalfHeight = cam.orthographicSize;
 
-        // Limite la position de la caméra sur l'axe Y (haut et bas)
-        float clampedY = Mathf.Clamp(transform.position.y, tilemapMin.y + camHalfHeight, tilemapMax.y - camHalfHeight);
+        float clampedX = Mathf.Clamp(transform.position.x, tilemapBounds.min.x + camHalfWidth, tilemapBounds.max.x - camHalfWidth);
+        float clampedY = Mathf.Clamp(transform.position.y, tilemapBounds.min.y + camHalfHeight, tilemapBounds.max.y - camHalfHeight);
 
-        // Applique les nouvelles positions limitées à la caméra
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
+
 }
