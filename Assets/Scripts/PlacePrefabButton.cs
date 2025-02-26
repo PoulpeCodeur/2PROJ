@@ -8,11 +8,11 @@ public class PlacePrefabButton : MonoBehaviour
     private void Start()
     {
         Button button = GetComponent<Button>();
-        button.onClick.AddListener(OnButtonClick);
+        button.onClick.AddListener(() => OnButtonClick(button));
     }
 
-    private void OnButtonClick()
+    private void OnButtonClick(Button button)
     {
-        placePrefabScript.StartPlacing();
+        placePrefabScript.StartPlacing(button);
     }
 }
