@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 9dbd8d3b35d63104bb37a3969713df48
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - botPrefab: {instanceID: 0}
+  - bot2Prefab: {instanceID: 0}
+  - spawnPoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

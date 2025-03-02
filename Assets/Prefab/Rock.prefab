@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1573651753942375527}
   - component: {fileID: -4334269551201431626}
   - component: {fileID: -193086321031688692}
+  - component: {fileID: -3408298166860637571}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -8517788502470801009, guid: 8890ca9d17d01bd4e928e3200d1245fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0513096615100944ae4ba35b9917096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stoneAmount: 3
 --- !u!61 &-193086321031688692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +149,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.8125, y: 1.96875}
   m_EdgeRadius: 0
+--- !u!114 &-3408298166860637571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537278967681652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41f4969ff2bb7e478bac14d37466c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

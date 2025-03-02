@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1380052599706187741}
   - component: {fileID: 3663430545084568262}
   - component: {fileID: 2070146504751074975}
+  - component: {fileID: 5837164779750791410}
   m_Layer: 0
   m_Name: fireCamp
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 4673609438301465265, guid: 53f3ce5dc95babf4aae5d0f913545916, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,12 +101,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dbd8d3b35d63104bb37a3969713df48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
-  experience: 0
-  expToNextLevel: 10
-  tent: {fileID: 6775630081869261518, guid: dd11445f4aa89e941a2e6c175080530a, type: 3}
-  tent2: {fileID: 1250298906956272612, guid: 517b61d3127039d47b06341a8af668bb, type: 3}
   botPrefab: {fileID: 2380872800036695723, guid: 106f24edebcc1b34993407b46640a50d, type: 3}
   bot2Prefab: {fileID: 2380872800036695723, guid: 397a7368cc1201243ac71c1a8e98e058, type: 3}
   spawnPoint: {fileID: 6750862468449884247}
-  spawnInterval: 5
+  spawnInterval: 1
+--- !u!114 &5837164779750791410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750862468449884247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41f4969ff2bb7e478bac14d37466c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>AstarPathfindingProjectEditor</AssemblyName>
+    <AssemblyName>Tests</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -54,7 +54,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>6000.0.32f1</UnityVersion>
   </PropertyGroup>
@@ -65,30 +65,108 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\SeekerEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AILerpEditor.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\SkillTrees\SkillTreeTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\Game\VendorScreen\VendorScreenPresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\Util\Encryption\PasswordUtilTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ArrowLists\Animation\ArrowListAnimatorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterCreate\ArrowListAdapters\BioColorListAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Sliders\SimpleSliderTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ActionBars\ActionBarCooldownTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\LoginHelp\LoginHelpPresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\ScaleDecoratorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Keyboard\SimpleKeyListenerTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Base\Presenter\BasePresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Selection\SelectionStrategyFactoryTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\SpriteDecoratorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Input\InputFieldTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\Register\RegisterPresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\OffsetDecoratorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\Game\GameScreen\GameScenePresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Factory\CharacterIconFactoryTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Event\CurrentGameObjectProviderTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\TabButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterCreate\CharacterCreatePresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\ColorDecoratorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\Util\Extensions\PointerEventDataExtensionsTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Notifications\NotificationTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterCreate\CharacterCreateModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Keyboard\KeyInputStateTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\BaseDecoratorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Base\Component\MonoBehaviourComponentTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\ListViewTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\SkillBars\SkillBarTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Toggle\ToggleGroupTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\CoroutineHelper.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\TimeUtils\TimeConsumerTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Progress\ProgressBarTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Drag\DraggableTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\Login\LoginModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Data\Model\Character\CharacterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterCreate\ArrowListAdapters\DefaultStyleAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\ButtonSelectionGroupTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\SkillTreeButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterCreate\ArrowListAdapters\DefaultStyleTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ActionBars\ActionBarButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Layout\MarginTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterCreate\ArrowListAdapters\BioColorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\Game\LoadingScreen\LoadingScreenPresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Adapter\ItemHolderStateManagerTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Selection\SelectionChangeListenerTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\SkillTrees\SkillArrowLineTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\LoginHelp\LoginHelpModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\DecoratorExtensionsTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Toggle\ToggleButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\Game\VendorScreen\VendorScreenModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\State\ElementStateTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Base\Component\BaseComponentTest.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\UiUtilTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\RectButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\DropDowns\Adapters\DropDownAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\Register\RegisterModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\DropDowns\DropDownTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\ListItem\ItemTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Animation\CanvasGroupAnimatorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\SkillTrees\SkillLevelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\TooltipInfo\TooltipPointerTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Loading\LoadingBarTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Decorators\VisibilityDecoratorTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Adapter\ListAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\Game\LoadingScreen\LoadingScreenModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Scene\SceneUtilsTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ArrowLists\Adapter\EmptyArrowListAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ArrowLists\Adapter\ArrowListAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterSelect\CharacterSelectPresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\Login\LoginPresenterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\DropDowns\Adapters\DefaultDropDownAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Selection\SelectionStrategyImplementationTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ArrowLists\ArrowListTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Holder\ListItemHolderTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\CircleButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\ModelViews\ModalViewTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\BaseButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\TimeUtils\TimeFormatterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Events\ElementEventDispatcherTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\Game\GameScreen\GameSceneModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Adapter\DefaultListAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterSelect\CharacterSelectModelTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Events\ElementEventPromoterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\Util\Reactive\DelayObserverTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\SkillTrees\SkillProgressLineTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Client\UI\User\CharacterSelect\CharacterList\CharacterListAdapterTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Layout\LayoutHelperTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\TooltipInfo\TooltipTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Dialogs\DialogTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\SkillTrees\SkillAmountLimitTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\List\Holder\DefaultListItemHolderTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\Animation\AnimationStateTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Button\IconButtonTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Factory\ListItemFactoryTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Util\TimeUtils\TimeProviderTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\Util\Extensions\ObservableExtensionsTests.cs" />
+    <Compile Include="Assets\SharpUI\Tests\SharpUI\Common\UI\Elements\Events\ItemEventPromoterTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
-    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
-    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
-    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+    <None Include="Assets\SharpUI\Tests\Tests.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -575,52 +653,16 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit\net40\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy\Lib\Editor\unityplastic.dll</HintPath>
+    <Reference Include="Castle.Core">
+      <HintPath>Assets\SharpUI\Libs\CastleCore\Castle.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy\Lib\Editor\log4netPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    <Reference Include="NSubstitute">
+      <HintPath>Assets\SharpUI\Libs\NSubstitute\NSubstitute.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="mscorlib">
@@ -1123,14 +1165,6 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.32f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
       <Private>False</Private>
@@ -1139,10 +1173,25 @@
       <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AstarPathfindingProject.csproj" />
-    <ProjectReference Include="PackageToolsEditor.csproj" />
+    <ProjectReference Include="SharpUIScriptsAssembly.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
